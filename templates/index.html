@@ -11,6 +11,9 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.css" type="text/css" />
+  <script type="text/javascript" src="http://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+  {{ script|safe }}
   </head>
   <body>
     <div class="container">
@@ -21,7 +24,9 @@
               Enter Ticker: <input type="text" name="stock_ticker"><br>
               <input type="submit" value="Submit">
           </form>
-            <h4>{{ result }}</h4>
+            <div class='bokeh'>
+             {{ div|safe }}
+            </div>
         </div>
       </div>
     </div>
