@@ -61,7 +61,7 @@ def handle_ticker():
 	p1.line(datetime(df2.index),df2['Close'], color='#A6CEE3', legend_label=ticker);
 	p1.legend.location = "top_left"
 	script, div = components(p1)
-
+	
 	return render_template('index.html', div=div, script=script);
 
 if __name__ == '__main__':

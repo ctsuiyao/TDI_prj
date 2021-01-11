@@ -11,14 +11,9 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-1.4.0.min.js"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-1.4.0.min.js"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bokeh-1.4.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bokeh-widgets-1.4.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bokeh-tables-1.4.0.min.js"') }}"></script>
 
   {{ script|safe }}
   </head>
