@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect
-from flask import Flask, jsonify
+from flask import Flask
 import requests
 
 app = Flask(__name__)
@@ -23,6 +23,7 @@ def getData(ticker):
 def handle_ticker():
 	ticker = request.form['stock_ticker']
 	response = getData(ticker);
+
 	return render_template('index.html', result=response);
 
 if __name__ == '__main__':
